@@ -91,7 +91,46 @@
     </dl>
 
     <hr>
+    <form action="#" method="POST" name="name1">
+        用户名：<input type="text" name="username" value="请输入用户名" maxlength="10"> <br>
+        密码：<input type="password" name="password"> <br>
+        性别：<label for="sex_male">男</label> <input type="radio" name="sex" value="男" id="sex_male" checked="checked"> 女
+        <input type="radio" name="sex" value="女">
+        <br>
+        爱好：吃饭 <input type="checkbox" name="hobby" value="吃饭"> 睡觉 <input type="checkbox" name="hobby" value="睡觉"> <br>
+        同意申请：同意<input type="checkbox" name="agree" value="同意" checked="" checked> <br>
+        <input type="submit" value="注册"> <input type="reset" value="充值"> <input type="button" value="按钮"> <br>
+        <input type="file" value="上传文件"> <br>
+        <hr>
+        籍贯：<select name="regeions">
+            <option>山东</option>
+            <option selected="selected">上海</option>
+        </select>
+        <hr>
+        文本域：<textarea cols="50" rows="2">这是啥啊？
+        </textarea>
+    </form>
 
+    <br>
+
+    <h4>案例展示</h4>
+    <table>
+        <tr>
+            <td>性别：</td>
+            <td><label for="sex_male">男</label> <input type="radio" name="sex" value="男" id="sex_male"
+                    checked="checked"> 女
+                <input type="radio" name="sex" value="女">
+            </td>
+        </tr>
+        <tr>
+            <td>用户名：</td>
+            <td><input type="text" name="username" value="请输入用户名" maxlength="10"></td>
+        </tr>
+        <tr>
+            <td>密码：</td>
+            <td><input type="password" name="password"></td>
+        </tr>
+    </table>
 
 </body>
 
