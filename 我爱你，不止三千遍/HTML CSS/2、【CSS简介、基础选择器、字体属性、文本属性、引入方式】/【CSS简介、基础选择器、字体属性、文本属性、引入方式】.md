@@ -1,6 +1,6 @@
 # 【CSS简介、基础选择器、字体属性、文本属性、引入方式】
 
-> 本文档是个人对 Pink 老师课程的总结归纳及补充，转载请注明出处！ 
+> 本文档是个人对 Pink 老师课程的总结归纳及补充，转载请注明出处！
 
 # 一、CSS简介
 
@@ -73,8 +73,8 @@ h3 { color: deeppink; font-size: 20px; }
 
 ```css
 h3 {
-	color: deeppink;
-	font-size: 20px;
+ color: deeppink;
+ font-size: 20px;
 }
 ```
 
@@ -86,7 +86,7 @@ h3 {
 
 ```css
 H3 {
-	COLOR: PINK;
+ COLOR: PINK;
 }
 ```
 
@@ -94,7 +94,7 @@ H3 {
 
 ```css
 h3 {
-	color: pink;
+ color: pink;
 }
 ```
 
@@ -106,7 +106,7 @@ h3 {
 
 ```css
 h3 {
-	color: pink;
+ color: pink;
 }
 ```
 
@@ -121,8 +121,8 @@ h3 {
 
 ```css
 h1 {
-	color: red;
-	font-size: 25px;
+ color: red;
+ font-size: 25px;
 }
 ```
 
@@ -146,10 +146,10 @@ h1 {
 
 ```css
 标签名 {
-	属性1: 属性值1;
-	属性2: 属性值2;
-	属性3: 属性值3;
-	...
+ 属性1: 属性值1;
+ 属性2: 属性值2;
+ 属性3: 属性值3;
+ ...
 }
 ```
 
@@ -206,8 +206,8 @@ h1 {
 
 ```css
 .类名 {
-	属性1: 属性值1;
-	...
+ 属性1: 属性值1;
+ ...
 }
 ```
 
@@ -215,7 +215,7 @@ h1 {
 
 ```css
 .red {
-	color: red;
+ color: red;
 }
 ```
 
@@ -362,8 +362,8 @@ HTML 元素以 id 属性来设置 id 选择器，CSS 中 id 选择器以 `#` 来
 
 ```css
 #id名 {
-	属性1: 属性值1;
-	...
+ 属性1: 属性值1;
+ ...
 }
 ```
 
@@ -371,7 +371,7 @@ HTML 元素以 id 属性来设置 id 选择器，CSS 中 id 选择器以 `#` 来
 
 ```css
 #nav {
-	color: red;
+ color: red;
 }
 ```
 
@@ -384,7 +384,7 @@ HTML 元素以 id 属性来设置 id 选择器，CSS 中 id 选择器以 `#` 来
 - 类选择器 (class) 好比人的名字，一个人可以有多个名字，同时一个名字也可以被多个人使用
 - id 选择器好比人的身份证号码，全中国是唯一的，不可重复（同一个 id 选择器只能调用一次）
 - id 选择器和类选择器最大的不同在于使用次数上
-- 类选择器在修改样式中用的最多，id 选择器一般用于页面唯一性的元素上，经常和 JavaScript 搭配使用
+- 类选择器在修改样式中用的最多，id 选择器一般用于**页面唯一性的元素**上，经常和 JavaScript 搭配使用
 
 ```html
 <!doctype html>
@@ -420,8 +420,8 @@ HTML 元素以 id 属性来设置 id 选择器，CSS 中 id 选择器以 `#` 来
 
 ```css
 * {
-	属性1: 属性值1;
-	...
+ 属性1: 属性值1;
+ ...
 }
 ```
 
@@ -431,8 +431,8 @@ HTML 元素以 id 属性来设置 id 选择器，CSS 中 id 选择器以 `#` 来
 ```css
 // 利用通配符选择器清除所有的元素标签的内外边距，后期讲
 * {
-	margin: 0;
-	padding: 0;
+ margin: 0;
+ padding: 0;
 }
 ```
 
@@ -486,11 +486,11 @@ CSS 使用 font-family 属性定义文本的字体系列。
 
 ```css
 p {
-	font-family: "Microsoft YaHei";
+ font-family: "Microsoft YaHei";
 }
 
 div {
-	font-family: Arial, "Microsoft YaHei";
+ font-family: Arial, "Microsoft YaHei";
 }
 ```
 
@@ -503,7 +503,7 @@ div {
 >
 > ```css
 > body {
->    	font-family: "SF Pro SC", "SF Pro Text", "SF Pro Icons", "PingFang SC", "Helvetica Neue", "Helvetica", "Arial", sans-serif
+>     font-family: "SF Pro SC", "SF Pro Text", "SF Pro Icons", "PingFang SC", "Helvetica Neue", "Helvetica", "Arial", sans-serif
 > }
 > ```
 
@@ -511,7 +511,7 @@ div {
 >
 > ```css
 > body {
->    	font-family: -apple-system, BlinkMacSystemFont,"Segoe UI", Roboto, Helvetica, Arial, sans-serif
+>     font-family: -apple-system, BlinkMacSystemFont,"Segoe UI", Roboto, Helvetica, Arial, sans-serif
 > }
 > ```
 
@@ -519,7 +519,7 @@ div {
 >
 >```css
 >body {
->    	font-family: -apple-system, BlinkMacSystemFont, Helvetica Neue, PingFang SC, Microsoft YaHei, Source Han Sans SC, Noto Sans CJK SC, WenQuanYi Micro Hei, sans-serif
+>     font-family: -apple-system, BlinkMacSystemFont, Helvetica Neue, PingFang SC, Microsoft YaHei, Source Han Sans SC, Noto Sans CJK SC, WenQuanYi Micro Hei, sans-serif
 >}
 >```
 
@@ -605,7 +605,7 @@ CSS 使用 font-size 属性定义字体大小。
 
 ```css
 p {
-	font-size: 20px;
+ font-size: 20px;
 }
 ```
 
@@ -654,7 +654,7 @@ CSS 使用 font-weight 属性设置文本字体的粗细。
 
 ```css
 p {
-	font-weight: bold;
+ font-weight: bold;
 }
 ```
 
@@ -709,7 +709,7 @@ CSS 使用 font-style 属性设置文本的风格。
 
 ```css
 p {
-	font-style: normal;
+ font-style: normal;
 }
 ```
 
@@ -756,11 +756,11 @@ p {
 
 ```css
 body {
-	font: font-style font-weight font-size/line-height font-family;
+ font: font-style font-weight font-size/line-height font-family;
 }
 
 body {
-	font: normal 400 font-size/line-height "Microsoft YaHei", Arial, sans-serif;
+ font: normal 400 font-size/line-height "Microsoft YaHei", Arial, sans-serif;
 }
 ```
 
@@ -820,7 +820,7 @@ CSS Text（文本）属性可定义文本的 `外观`，比如：`文本颜色`�
 
 ```css
 div {
-	color: red;
+ color: red;
 }
 ```
 
@@ -895,7 +895,7 @@ div {
 
 ```css
 div {
-	text-align: center;
+ text-align: center;
 }
 ```
 
@@ -954,7 +954,7 @@ div {
 
 <body>
    <div>
-	   <p>zhoujiruizhoujirui</p>
+    <p>zhoujiruizhoujirui</p>
    </div>
 </body>
 
@@ -969,7 +969,7 @@ div {
 
 ```css
 div {
-	text-decoration: underline;
+ text-decoration: underline;
 }
 ```
 
@@ -1022,7 +1022,7 @@ div {
 
 ```css
 div {
-	text-indent: 10px;
+ text-indent: 10px;
 }
 ```
 
@@ -1030,7 +1030,7 @@ div {
 
 ```css
 p {
-	text-indent: 2em;
+ text-indent: 2em;
 }
 ```
 
@@ -1075,7 +1075,7 @@ em 是一个相对单位，就是当前元素 (font-size) 1 个文字的大小�
 
 ```css
 p {
-	line-height: 26px;
+ line-height: 26px;
 }
 ```
 

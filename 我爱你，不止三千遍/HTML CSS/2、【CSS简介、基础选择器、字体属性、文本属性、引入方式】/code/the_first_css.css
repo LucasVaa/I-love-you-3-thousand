@@ -1,0 +1,79 @@
+/* 选择器 {样式} */
+/* 标签选择器 */
+p {
+  background-color: white;
+}
+
+/* 类选择器 常用*/
+.color-red {
+  color: red;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+}
+
+.red {
+  background-color: red;
+}
+
+.green {
+  background-color: green;
+}
+
+/* id选择器  只能调用一次*/
+
+#username {
+  color: orange;
+  background-color: black;
+  /* font-style: italic;
+            font-weight: bold;
+            font-size: 12px;
+            line-height: 40px;
+            font-family: 'Microsoft yahei'; */
+  font: italic bold 12px/30px "Helvetica Neue";
+}
+
+/* 通配符选择器 所有标签 自动适用 */
+
+* {
+  padding-left: 0px;
+}
+
+/* 字体 */
+
+body {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 30px;
+}
+
+em {
+  font-style: normal;
+}
+
+.mul-color {
+  /* color: red; */
+  /* color: rgb(255, 0, 0); */
+  color: #ff0000;
+}
+
+.p-align {
+  text-align: center;
+}
+
+.p-line {
+  text-decoration: underline;
+}
+
+a {
+  text-decoration: none;
+}
+
+.p-indent-height {
+  /* text-indent: 20px; */
+  /* em当前元素font-size 一个文字的大小 */
+  text-indent: 2em;
+  /* 除去文字的高度后上下平分 */
+  line-height: 40px;
+}
