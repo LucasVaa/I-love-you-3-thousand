@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>元素显示模式</title>
+  </head>
+  <style>
+    div {
+      width: 220px;
+      height: 220px;
+      background-color: brown;
+    }
+    /* 内联元素 直接设置高宽无效 */
+    span {
+      width: 220px;
+      height: 220px;
+      background-color: pink;
+    }
+    /* 行内块元素 */
+    input {
+      width: 290px;
+      height: 290px;
+    }
+    .input-1 {
+      width: 40px;
+      height: 380px;
+    }
+
+    a {
+      display: block;
+      width: 200px;
+      height: 50px;
+      background-color: pink;
+    }
+
+    .div-b-to-i {
+      display: inline;
+    }
+
+    .span-i-to-ib {
+      display: inline-block;
+      width: 222px;
+      height: 222px;
+    }
+    .mi {
+      width: 220px;
+      height: 220px;
+      background-color: green;
+    }
+    .mi > a {
+      width: 292px;
+      height: 50px;
+      display: block;
+      background-color: #a2a0a0;
+      text-decoration: none;
+      color: white;
+      /* 单行文字垂直居中 */
+      line-height: 50px;
+      text-indent: 2em;
+    }
+    .mi > a:hover {
+      background-color: #ff6700;
+    }
+  </style>
+  <body>
+    <div>
+      块元素 独占一行， 宽高内外间距可调整， 默认父级100%宽度， 是一个容器/盒子
+    </div>
+    <span>span</span>
+    <strong>strong</strong>
+    <hr />
+    <input type="text" />
+    <input type="text" />
+    <input class="input-1" type="text" />
+    <hr />
+    <a href="#">行内元素->块级元素</a>
+    <a href="#">行内元素->块级元素</a>
+    <div class="div-b-to-i">块级元素->行内元素</div>
+    <div class="div-b-to-i">块级元素->行内元素</div>
+    <span class="span-i-to-ib">行内元素->行内块元素</span>
+    <span class="span-i-to-ib">行内元素->行内块元素</span>
+    <span class="span-i-to-ib">行内元素->行内块元素</span>
+    <hr />
+    <div class="mi">
+      <a href="#">手机</a>
+      <a href="#">电视</a>
+      <a href="#">家电</a>
+      <a href="#">笔记本</a>
+      <a href="#">耳机</a>
+    </div>
+  </body>
+</html>

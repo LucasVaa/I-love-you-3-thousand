@@ -1,60 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-        ol p {
-            color: red;
-        }
+      ol p {
+        color: red;
+      }
 
-        .nav p {
-            color: green;
-        }
+      .nav p {
+        color: green;
+      }
 
-        .nav a {
-            color: red;
-        }
+      .nav a {
+        color: red;
+      }
 
-        .nav-ul>a {
-            color: red;
-        }
+      .nav-ul > a {
+        color: red;
+      }
+
+      .nav-ul > li > a:link {
+        color: pink;
+      }
+
+      .nav-ul > li > a:visited {
+        color: grey;
+      }
+
+      .nav-ul > li > a:hover {
+        color: purple;
+      }
+
+      .nav-ul > li > a:active {
+        color: greenyellow;
+      }
+
+      input:focus {
+        background-color: pink;
+      }
     </style>
-</head>
+  </head>
 
-
-<body>
+  <body>
     <ol>
-        <li>我是ol 中 li</li>
-        <li>我是ol 中 li</li>
-        <li>我是ol 中 li</li>
-        <li>我是ol 中 li</li>
-        <li>我是ol 中 li</li>
-        <p>我是 ol 中 p</p>
+      <li>我是ol 中 li</li>
+      <li>我是ol 中 li</li>
+      <p>我是 ol 中 p</p>
     </ol>
     <ol class="nav">
-        <li>我是ol 中 li</li>
-        <li>我是ol 中 li</li>
-        <li>我是ol 中 li</li>
-        <li>我是ol 中 li</li>
-        <li>我是ol 中 li</li>
-        <a href="#">click me</a>
-        <p>我是 ol 中 p</p>
-        <a href="#">click me</a>
+      <li>我是ol 中 li</li>
+      <li>我是ol 中 li</li>
+      <a href="#">click me</a>
+      <p>我是 ol 中 p</p>
+      <a href="#">click me</a>
     </ol>
 
-    <hr>
+    <hr />
 
     <ul class="nav-ul">
+      <a href="#">click me</a>
+      <li>
         <a href="#">click me</a>
-        <li>
-            <a href="#">click me</a>
-
-        </li>
+      </li>
     </ul>
-</body>
 
+    <hr />
+
+    <input type="text">
+    <input type="text">
+    <input type="text">
+  </body>
 </html>
