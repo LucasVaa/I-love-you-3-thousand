@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>层叠性 继承性 优先级</title>
+  </head>
+  <style>
+    div {
+      color: #000;
+      font-size: 22px;
+      background-color: rgba(219, 54, 29, 0.5);
+    }
+    div {
+      color: rgba(219, 54, 29, 0.3);
+    }
+    body {
+      /* 1.5的行高代表的是当前文字的1.5倍 */
+      font: 12px/1.5 "Microsoft YaHei";
+    }
+
+    .test {
+      color: rgba(219, 54, 29, 0.6);
+    }
+
+    #test {
+      color: rgba(219, 54, 29, 1);
+    }
+    p {
+      color: #000;
+    }
+
+    li {
+      color: rgb(0, 76, 255);
+    }
+
+    ul li {
+      color: purple;
+    }
+    /* 0,0,1,1 */
+    .nav li {
+        color: red;
+    }
+    /* 0,0,1,0 */
+    .pink {
+        color: pink;
+    }
+  </style>
+  <body>
+    <hr />
+    <h1>层叠</h1>
+    <div>样式冲突：就近；样式不冲突：不曾叠</div>
+    <hr />
+    <h1>继承</h1>
+    <div>
+      <p>p继承div部分样式（文本、字体、段落、颜色）</p>
+    </div>
+    <p>行高的继承</p>
+    <hr />
+    <h1>优先级</h1>
+    <div>只有元素选择</div>
+    <div class="test">同时存在元素 和 类 选择器</div>
+    <div id="test" class="test">同时存在元素 和 类 和 id 选择器</div>
+    <div id="test" class="test" style="color: blue">
+      同时存在元素 和 类 和 id 和行内样式选择器
+      <hr />
+      <span>span继承div</span>
+      <p>p直接被选择出来了，那么就与父亲无关了</p>
+    </div>
+    <hr />
+    <h1>权重叠加</h1>
+    <ul class="nav">
+      <li class="pink">li</li>
+      <li>li</li>
+      <li>li</li>
+    </ul>
+  </body>
+</html>

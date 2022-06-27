@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>盒子模型</title>
+  </head>
+  <style>
+    .border {
+      width: 200px;
+      height: 300px;
+      border-width: 5px;
+      /* border-style: solid; */
+      /* border-style: dashed; */
+      border-style: dotted;
+      border-color: pink;
+      display: inline-block;
+    }
+
+    .border-compound {
+      width: 200px;
+      height: 300px;
+      border: 5px solid red;
+      /* 层叠性 1. 只覆盖冲突部分 2. 后覆盖前*/
+      display: inline-block;
+      border-top: 5px solid blue;
+    }
+
+    table {
+      width: 500px;
+      height: 249px;
+    }
+
+    th {
+      height: 40px;
+    }
+
+    table,
+    td,
+    th {
+      border: 1px solid pink;
+      /* 相邻表格的边框合并到一起 */
+      border-collapse: collapse;
+      text-align: center;
+      font-size: 20px;
+    }
+
+    .padding {
+      width: 200px;
+      height: 200px;
+      background-color: pink;
+      /* padding-left: 20px;
+      padding-top: 10px;
+      padding-bottom: 10px; */
+      padding: 10px 0 10px 20px;
+    }
+
+    .sina-nav {
+      height: 41px;
+      background-color: #fcfcfc;
+      border-top: 3px solid #ff8500;
+      border-bottom: 1px solid #edeef0;
+      line-height: 41px;
+    }
+
+    .sina-nav > a {
+      display: inline-block;
+      height: 41px;
+      font-size: 12px;
+      padding: 0 10px;
+      color: #4c4c4c;
+      text-decoration: none;
+    }
+    .sina-nav > a:hover {
+      background-color: #eee;
+      color: #ff8500;
+    }
+
+    .margin {
+      width: 200px;
+      height: 200px;
+      background: skyblue;
+      margin-bottom: 10px;
+    }
+    .x-center {
+      width: 200px;
+      height: 200px;
+      margin: 0 auto;
+      background: skyblue;
+    }
+  </style>
+  <body>
+    <h1>边框</h1>
+    <div class="border"></div>
+    <div class="border-compound"></div>
+    <hr />
+    <h1>表格的细线边框</h1>
+    <table align="center" cellspacing="0">
+      <thead>
+        <tr>
+          <th>排名</th>
+          <th>趋势</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>good</td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>good</td>
+        </tr>
+      </tbody>
+    </table>
+    边框会额外增加盒子的实际区域大小
+    <hr />
+    <h1>内边距padding</h1>
+    <div class="padding">盒子内容盒子内容盒子内容盒子内容盒子内容</div>
+    内边距会额外增加盒子的实际区域大小
+    <hr />
+    <h1>新浪导航案例</h1>
+    <div class="sina-nav">
+      <a href="#">关注我</a>
+      <a href="#">微博</a>
+      <a href="#">博客</a>
+      <a href="#">移动客户端</a>
+      <a href="#">手机新浪网</a>
+      <a href="#">设为首页</a>
+    </div>
+    如果盒子本身没有指定 width、height 属性，则此时 padding 不会撑开盒子区域大小
+    <hr />
+    <h1>外边距margin</h1>
+    <div class="margin"></div>
+    <div class="margin"></div>
+    <div class="x-center">利用外边距使块级盒子水平居中</div>
+    <div style="text-align: center">
+      <p>
+        行内元素或者行内块元素水平居中给其父元素添加 text-align: center 即可
+      </p>
+    </div>
+  </body>
+</html>
