@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>清除浮动</title>
+  </head>
+  <style>
+    .pre .box {
+      width: 500px;
+      border: 1px solid blue;
+    }
+    .pre .damao {
+      float: left;
+      width: 200px;
+      height: 200px;
+      background-color: aqua;
+    }
+    .pre .ermao {
+      float: left;
+      width: 200px;
+      height: 200px;
+      background-color: navajowhite;
+    }
+    .pre .tbox {
+      width: 500px;
+      height: 100px;
+      background-color: pink;
+    }
+
+    .fix .box {
+      /* 父级添加 overflow */
+      /* overflow: hidden; */
+      width: 500px;
+      border: 1px solid blue;
+    }
+    .fix .damao {
+      float: left;
+      width: 200px;
+      height: 200px;
+      background-color: aqua;
+    }
+    .fix .ermao {
+      float: left;
+      width: 200px;
+      height: 200px;
+      background-color: navajowhite;
+    }
+    .fix .tbox {
+      width: 500px;
+      height: 100px;
+      background-color: pink;
+    }
+
+    /* :after 伪元素法 */
+
+    .clearfix:after {
+      content: "";
+      display: block;
+      height: 0;
+      clear: both;
+      visibility: hidden;
+    }
+
+    .clearfix {
+      *zoom: 1;
+    }
+  </style>
+  <body>
+    <div class="fix">
+      <h1>清除浮动</h1>
+      <div class="box clearfix">
+        <div class="damao"></div>
+        <div class="ermao"></div>
+      </div>
+      <div class="tbox">
+        蓝色框内的子盒子浮动，脱离标准流，父盒子没有高度就为0，父盒子不会被浮动的子盒子撑开
+      </div>
+    </div>
+    <div class="pre">
+      <h1>问题展示</h1>
+      <div class="box">
+        <div class="damao"></div>
+        <div class="ermao"></div>
+      </div>
+      <div class="tbox">
+        蓝色框内的子盒子浮动，脱离标准流，父盒子没有高度就为0，父盒子不会被浮动的子盒子撑开
+      </div>
+    </div>
+  </body>
+</html>
