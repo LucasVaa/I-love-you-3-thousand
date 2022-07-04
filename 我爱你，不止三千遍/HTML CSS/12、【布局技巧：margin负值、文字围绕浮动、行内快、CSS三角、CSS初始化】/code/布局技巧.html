@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>布局技巧</title>
+  </head>
+  <style>
+    ul li {
+      float: left;
+      list-style: none;
+      width: 150px;
+      height: 200px;
+      border: 1px solid aqua;
+      margin-left: -1px;
+    }
+    ul li:hover {
+      position: relative;
+      border-color: pink;
+    }
+    .box1 {
+      position: relative;
+      width: 200px;
+      height: 100px;
+      background-color: pink;
+    }
+    .tri {
+      position: absolute;
+      right: 0;
+      width: 0;
+      height: 0;
+      border-color: transparent white transparent transparent;
+      border-style: solid;
+      border-width: 100px 40px 0 0;
+    }
+    .price {
+      width: 150px;
+      height: 30px;
+      background-color: pink;
+      line-height: 30px;
+      border: 1px solid red;
+    }
+    .left {
+      position: relative;
+      float: left;
+      width: 75px;
+      height: 100%;
+      text-align: center;
+    }
+
+    .trii {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 0;
+      height: 0;
+      border-color: transparent white transparent transparent;
+      border-style: solid;
+      border-width: 30px 10px 0 0;
+    }
+
+    .right {
+      position: relative;
+      float: left;
+      width: 75px;
+      height: 100%;
+      background-color: white;
+      text-align: center;
+    }
+  </style>
+  <body>
+    <ul style="overflow: hidden">
+      <li>li</li>
+      <li>li</li>
+      <li>li</li>
+      <li>li</li>
+      <li>li</li>
+    </ul>
+    <hr />
+    <div class="box1">
+      <div class="tri"></div>
+    </div>
+    <hr />
+    <div class="price">
+      <span class="left">
+        $1234
+        <div class="trii"></div></span
+      ><span class="right">$2345</span>
+    </div>
+  </body>
+</html>

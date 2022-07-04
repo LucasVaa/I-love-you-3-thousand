@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>利用css制作三角形</title>
+  </head>
+  <style>
+    .box1 {
+      width: 0;
+      height: 0;
+      border-top: 100px solid #000;
+      border-bottom: 100px solid pink;
+      border-right: 100px solid palegreen;
+      border-left: 100px solid palevioletred;
+    }
+
+    .box2 {
+      width: 0;
+      height: 0;
+      border: 100px solid transparent;
+      border-left-color: palevioletred;
+    }
+
+    .box {
+      position: relative;
+      width: 200px;
+      height: 200px;
+      margin: 200px auto;
+      background-color: blue;
+    }
+
+    .tri {
+      position: absolute;
+      top: -20px;
+      right: 90px;
+      width: 0;
+      height: 0;
+      border: 10px solid transparent;
+      border-bottom-color: blue;
+    }
+  </style>
+  <body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box">
+      <div class="tri"></div>
+    </div>
+  </body>
+</html>
