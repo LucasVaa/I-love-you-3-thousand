@@ -663,7 +663,7 @@ CSS3 给我们新增了选择器，可以更加便捷，更加自由的选择目
 
 注意：
 
-- before 和 after 创建一个元素，属于行内元素
+- before 和 after 创建一个元素，属于**行内元素**
 - 新创建的这个元素在文档树中是找不到的，所以我们称为伪元素
 - 语法：`element::before{}`
 - before 和 after 必须有 content 属性

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>css新特性</title>
+  </head>
+  <style>
+    @font-face {
+      font-family: "icomoon";
+      src: url("fonts/icomoon.eot?yl175c");
+      src: url("fonts/icomoon.eot?yl175c#iefix") format("embedded-opentype"),
+        url("fonts/icomoon.ttf?yl175c") format("truetype"),
+        url("fonts/icomoon.woff?yl175c") format("woff"),
+        url("fonts/icomoon.svg?yl175c#icomoon") format("svg");
+      font-weight: normal;
+      font-style: normal;
+      font-display: block;
+    }
+    /* 权重为标签选择器+属性选择器 = 11 */
+    div[class^="icon"] {
+      color: pink;
+    }
+    .icon1 {
+      color: skyblue;
+    }
+
+    ul li:first-child {
+      background-color: pink;
+    }
+
+    ul li:last-child {
+      background-color: pink;
+    }
+
+    ul li:nth-child(2) {
+      background-color: skyblue;
+    }
+
+    .two li:nth-child(even) {
+      background-color: blue;
+    }
+    .two li:nth-child(odd) {
+      background-color: sandybrown;
+    }
+    /* n为0开始，每次加1 */
+    /* 2n 即 偶数行； 2n+1 即奇数行； n+5 从第5行开始； -n+5 前5个 */
+    .three li:nth-child(n) {
+      background-color: pink;
+    }
+    .testba {
+      width: 200px;
+      height: 200px;
+      background-color: pink;
+    }
+    .testba::after {
+      background-color: #fff;
+      content: "after";
+    }
+    .testba::before {
+      display: inline-block;
+      width: 80px;
+      height: 80px;
+      background-color: #fff;
+      content: "before";
+    }
+    .search {
+      position: relative;
+      width: 200px;
+      height: 35px;
+      border: 1px solid orange;
+    }
+    .search::after {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      content: "\e9b3";
+      font-family: "icomoon";
+      color: orange;
+    }
+    .border {
+      width: 200px;
+      height: 200px;
+      background-color: pink;
+      padding: 20px;
+      border: 20px solid saddlebrown;
+      box-sizing: content-box;
+    }
+    .change {
+      box-sizing: border-box;
+    }
+    img {
+      width: 500px;
+      filter: blur(15px);
+    }
+    img:hover {
+      filter: blur(0);
+    }
+    .father {
+      width: 500px;
+      height: 500px;
+      background-color: pink;
+    }
+    .son {
+      width: calc(100% - 30px);
+      height: calc(100% - 30px);
+      background-color: blue;
+    }
+    .tran {
+      width: 200px;
+      height: 200px;
+      background-color: pink;
+      /* transition: width 0.5s ease 0s; */
+      /* transition: width 0.5s, background-color 1s; */
+      transition: all 0.5s;
+    }
+    .tran:hover {
+      width: 600px;
+      background-color: blue;
+    }
+    .bar {
+        width: 200px;
+        height: 15px;
+        padding: 1px;
+        border: 1px solid red;
+        border-radius: 7.5px;
+    }
+    .bar_in {
+        width: 50%;
+        height: 100%;
+        border-radius: 6.5px;
+        background-color: red;
+        transition: all 0.5s;
+    }
+    .bar:hover .bar_in{
+        width: 100%;
+    }
+  </style>
+  <body>
+    <div class="icon1">icon1</div>
+    <div class="icon2">icon2</div>
+    <div class="icon3">icon3</div>
+    <hr />
+    <ul>
+      <li>1</li>
+      <li>2</li>
+      <li>3</li>
+      <li>4</li>
+      <li>5</li>
+    </ul>
+    <hr />
+    <ul class="two">
+      <li>1</li>
+      <li>2</li>
+      <li>3</li>
+      <li>4</li>
+      <li>5</li>
+    </ul>
+    <hr />
+    <ul class="three">
+      <li>1</li>
+      <li>2</li>
+      <li>3</li>
+      <li>4</li>
+      <li>5</li>
+    </ul>
+    <hr />
+    <div class="testba">content</div>
+    <hr />
+    <div class="search"></div>
+    <hr />
+    <div class="border">默认的content-box</div>
+    <div class="border change">使用border-box</div>
+    <hr />
+    <img src="./cropped-1920-1080-1003875.jpg" alt="" />
+    <hr />
+    <div class="father">
+      <div class="son"></div>
+    </div>
+    <hr />
+    <div class="tran"></div>
+    <hr>
+    <div class="bar">
+        <div class="bar_in"></div>
+    </div>
+  </body>
+</html>
