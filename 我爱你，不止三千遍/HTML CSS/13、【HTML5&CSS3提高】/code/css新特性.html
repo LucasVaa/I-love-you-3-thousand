@@ -18,10 +18,12 @@
       font-style: normal;
       font-display: block;
     }
+
     /* 权重为标签选择器+属性选择器 = 11 */
     div[class^="icon"] {
       color: pink;
     }
+
     .icon1 {
       color: skyblue;
     }
@@ -41,23 +43,28 @@
     .two li:nth-child(even) {
       background-color: blue;
     }
+
     .two li:nth-child(odd) {
       background-color: sandybrown;
     }
+
     /* n为0开始，每次加1 */
     /* 2n 即 偶数行； 2n+1 即奇数行； n+5 从第5行开始； -n+5 前5个 */
     .three li:nth-child(n) {
       background-color: pink;
     }
+
     .testba {
       width: 200px;
       height: 200px;
       background-color: pink;
     }
+
     .testba::after {
       background-color: #fff;
       content: "after";
     }
+
     .testba::before {
       display: inline-block;
       width: 80px;
@@ -65,12 +72,14 @@
       background-color: #fff;
       content: "before";
     }
+
     .search {
       position: relative;
       width: 200px;
       height: 35px;
       border: 1px solid orange;
     }
+
     .search::after {
       position: absolute;
       top: 10px;
@@ -79,6 +88,7 @@
       font-family: "icomoon";
       color: orange;
     }
+
     .border {
       width: 200px;
       height: 200px;
@@ -87,26 +97,32 @@
       border: 20px solid saddlebrown;
       box-sizing: content-box;
     }
+
     .change {
       box-sizing: border-box;
     }
+
     img {
       width: 500px;
       filter: blur(15px);
     }
+
     img:hover {
       filter: blur(0);
     }
+
     .father {
       width: 500px;
       height: 500px;
       background-color: pink;
     }
+
     .son {
       width: calc(100% - 30px);
       height: calc(100% - 30px);
       background-color: blue;
     }
+
     .tran {
       width: 200px;
       height: 200px;
@@ -115,28 +131,33 @@
       /* transition: width 0.5s, background-color 1s; */
       transition: all 0.5s;
     }
+
     .tran:hover {
       width: 600px;
       background-color: blue;
     }
+
     .bar {
-        width: 200px;
-        height: 15px;
-        padding: 1px;
-        border: 1px solid red;
-        border-radius: 7.5px;
+      width: 200px;
+      height: 15px;
+      padding: 1px;
+      border: 1px solid red;
+      border-radius: 7.5px;
     }
+
     .bar_in {
-        width: 50%;
-        height: 100%;
-        border-radius: 6.5px;
-        background-color: red;
-        transition: all 0.5s;
+      width: 50%;
+      height: 100%;
+      border-radius: 6.5px;
+      background-color: red;
+      transition: all 0.5s;
     }
-    .bar:hover .bar_in{
-        width: 100%;
+
+    .bar:hover .bar_in {
+      width: 100%;
     }
   </style>
+
   <body>
     <div class="icon1">icon1</div>
     <div class="icon2">icon2</div>
@@ -180,9 +201,9 @@
     </div>
     <hr />
     <div class="tran"></div>
-    <hr>
+    <hr />
     <div class="bar">
-        <div class="bar_in"></div>
+      <div class="bar_in"></div>
     </div>
   </body>
 </html>
