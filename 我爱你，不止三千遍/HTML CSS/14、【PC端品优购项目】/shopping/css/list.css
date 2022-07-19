@@ -1,0 +1,116 @@
+.sk {
+    position: absolute;
+    left: 185px;
+    top: 40px;
+    padding: 3px 0 3px 14px;
+    border-left: 1px solid #b1191a;
+}
+.sk_list {
+    float: left;
+}
+.sk_list ul li {
+    float: left;
+}
+.sk_list ul li a {
+    display: block;
+    padding: 0 23px;
+    line-height: 45px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #000;
+}
+.sk_con {
+    float: left;
+}
+.sk_con ul li {
+    float: left;
+}
+.sk_con ul li a {
+    display: block;
+    padding: 0 18px;
+    line-height: 47px;
+    font-size: 14px;
+    color: #666666;
+}
+.sk_con ul li a:hover {
+    color: #b1191a;
+}
+.sk_con ul li:last-child a::after {
+    content: "\e91e";
+    font-family: "icomoon";
+}
+.sk_bd ul li {
+    float: left;
+    width: 289px;
+    height: 460px;
+    margin-right: 13px;
+    border: 1px solid transparent;
+}
+.sk_bd ul li:nth-child(4n) {
+    margin-right: 0;
+}
+.sk_bd ul li:hover {
+    border: 1px solid #b1191a;
+}
+.sk_bd img {
+    padding: 0;
+    display: block;
+    margin: auto;
+}
+.item_detail {
+    padding: 0 13px;
+}
+.item_detail p {
+    font-size: 14px;
+    line-height: 24px;
+    color: #666666;
+}
+.now_price {
+    height: 30px;
+    margin-top: 11px;
+    font-size: 22px;
+    color: #e60012;
+    vertical-align: baseline;
+}
+.past_price {
+    height: 30px;
+    margin-top: 11px;
+    margin-left: 7px;
+    font-size: 14px;
+    color: #a4a4a4;
+    line-height: 38px;
+    text-decoration: line-through;
+}
+.progress_bar {
+    height: 40px;
+    line-height: 40px;
+}
+.progress_bar span {
+    padding: 0 10px;
+}
+.progress_bar .bar {
+    display: inline-block;
+    margin: auto;
+    margin-top: 14px;
+    width: 132px;
+    height: 12px;
+    border: 1px solid #e12228;
+    border-radius: 3px;
+}
+.progress_bar .bar .progress {
+    background-color: #ed282e;
+    width: 116px;
+    height: 100%;
+}
+.buy {
+    height: 39px;
+    width: 100%;
+    color: white;
+    background-color: #b1191a;
+    font-size: 20px;
+    line-height: 39px;
+    text-align: center;
+}
+.bug:hover {
+    cursor: pointer;
+}

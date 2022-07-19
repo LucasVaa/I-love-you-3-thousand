@@ -1,0 +1,239 @@
+.main {
+    width: 980px;
+    height: 455px;
+    margin-left: 220px;
+    margin-top: 10px;
+}
+.focus {
+    float: left;
+    width: 721px;
+    height: 455px;
+}
+.newsflash {
+    float: right;
+    width: 250px;
+    height: 455px;
+}
+.news {
+    height: 165px;
+    border: 1px solid #e4e4e4;
+}
+.news .news-hd {
+    height: 33px;
+    line-height: 33px;
+    padding: 0 15px;
+    border-bottom: 1px dotted #e4e4e4;
+}
+.news-hd h5 {
+    float: left;
+    font-size: 14px;
+}
+.news-hd .more {
+    float: right;
+}
+.news-hd .more::after {
+    font-family: "icomoon";
+    content: "\e920";
+}
+.news-bd {
+    padding: 5px 15px 0;
+}
+.news-bd ul li {
+    height: 24px;
+    line-height: 24px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.lifeservice {
+    height: 209px;
+    border: 1px solid #e4e4e4;
+    border-top: 0;
+}
+.lifeservice ul li {
+    position: relative;
+    float: left;
+    width: 63px;
+    height: 71px;
+    border-right: 1px solid #e4e4e4;
+    border-bottom: 1px solid #e4e4e4;
+    text-align: center;
+}
+.lifeservice ul li:nth-child(4n) {
+    width: 59px;
+    border-right: 0;
+}
+.lifeservice ul li:nth-child(n + 9) {
+    height: 67px;
+}
+.lifeservice ul li i {
+    display: inline-block;
+    height: 24px;
+    width: 24px;
+    margin-top: 12px;
+    background: url(../images/icons.png) no-repeat -17px -16px;
+}
+.lifeservice ul li img {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.bargain {
+    margin-top: 6px;
+}
+.recom {
+    height: 163px;
+    margin-top: 11px;
+}
+.recom_hd {
+    float: left;
+    height: 163px;
+    width: 206px;
+    background-color: #5c5251;
+}
+.recom_hd img {
+    margin-top: 31px;
+    margin-left: 62px;
+}
+.recom_bd ul li {
+    position: relative;
+    float: left;
+}
+.recom_bd ul li:nth-child(-n + 3)::after {
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 143px;
+    right: 0;
+    top: 10px;
+    background-color: #dddddd;
+}
+.recom_bd ul li img {
+    width: 248.5px;
+    height: 163px;
+}
+.maylike {
+    height: 271px;
+    margin-top: 21px;
+}
+.like_hd {
+    height: 38px;
+    line-height: 38px;
+}
+.like_hd h5 {
+    float: left;
+    font-size: 18px;
+}
+.like_hd a {
+    float: right;
+}
+.like_hd a:hover {
+    cursor: pointer;
+}
+.like_hd a::after {
+    content: "\ea2e";
+    font-family: "icomoon";
+    margin: 0 22px 0 10px;
+}
+.like_bd {
+    height: 233px;
+    border: 1px solid #ededed;
+}
+.like_bd ul {
+    width: 1212px;
+    overflow: hidden;
+}
+.like_bd ul li {
+    position: relative;
+    float: left;
+    height: 231px;
+    width: 202px;
+    background-color: #fff;
+}
+.like_bd ul li:nth-child(-n + 5):after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 10px;
+    height: 62px;
+    width: 1px;
+    background-color: #ededed;
+}
+.like_bd ul li .product {
+    position: relative;
+    height: 139px;
+    width: 159px;
+    margin: 14px 0 6px 20px;
+    text-align: center;
+    vertical-align: middle;
+}
+.like_bd ul li .product img {
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.like_bd ul li p {
+    margin-left: 36px;
+    line-height: 20px;
+}
+.money {
+    margin-top: 5px;
+    font-size: 18px;
+    color: #df3033;
+}
+.box_hd {
+    height: 30px;
+    border-bottom: 2px solid #c81623;
+}
+.box_hd h3 {
+    float: left;
+    font-size: 18px;
+    color: #c81623;
+}
+.box_hd .tab_list {
+    float: right;
+}
+.box_hd .tab_list ul li {
+    float: left;
+    line-height: 30px;
+}
+.box_hd .tab_list ul li a {
+    padding: 0 16px;
+}
+.floor .w {
+    margin-top: 30px;
+}
+.box_bd .tab_content {
+    height: 360px;
+}
+.tab_list_item > div {
+    float: left;
+    height: 360px;
+    text-align: center;
+}
+.tab_list_item div:nth-child(1) {
+    background-color: #f9f9f9;
+
+}
+.tab_list_item div:nth-child(1) ul {
+    padding-left: 14px;
+}
+.tab_list_item div:nth-child(1) ul li {
+    float: left;
+    width: 86px;
+    height: 33px;
+    margin-right: 12px;
+    border-bottom: 1px solid #ededed;
+    line-height: 33px;
+    text-align: center;
+}
+.tab_list_item div:nth-child(1) a img {
+    margin-top: 13px;
+}
+.item_a a {
+    display: block;
+    border-bottom: 1px solid #ededed;
+    border-right: 1px solid #ededed;
+}
