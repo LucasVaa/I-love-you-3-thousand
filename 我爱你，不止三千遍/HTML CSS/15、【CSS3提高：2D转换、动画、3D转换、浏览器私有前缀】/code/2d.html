@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+        }
+        .tra1 {
+            background-color: purple;
+            transition: all 0.7s;
+        }
+        .tra1:hover {
+            transform: translate(30px, 30px);
+        }
+        .father {
+            position: relative;
+            width: 680px;
+            height: 480px;
+            margin: 0 auto;
+        }
+        .son {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: purple;
+        }
+        .tri {
+            width: 10px;
+            height: 10px;
+            border-bottom: 1px solid black;
+            border-right: 1px solid black;
+            transform: rotate(45deg);
+            background-color: transparent;
+        }
+        .logo {
+            width: 100px;
+            height: 100px;
+            background-color: transparent;
+            overflow: hidden;
+            border: 1px solid bisque;
+        }
+        .logo::before {
+            content: "黑马";
+            display: block;
+            width: 100%;
+            height: 100%;
+            transform: rotate(90deg);
+            transform-origin: left bottom;
+            transition: all 0.4s;
+            background-color: pink;
+        }
+        .logo:hover::before {
+            transform: rotate(0deg);
+        }
+        .scale_f {
+            width: 329px;
+            height: 329px;
+            overflow: hidden;
+        }
+        .scale_f:hover img {
+            transform: scale(1.2);
+        }
+    </style>
+    <body>
+        <div class="tra1"></div>
+        <div class="tra2"></div>
+        <div class="father"><div class="son"></div></div>
+        <div class="tri"></div>
+        <div class="logo">123</div>
+        <div class="scale_f"><img src="../mark-img/photo.gif" alt="" /></div>
+        <div></div>
+    </body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <style>
+        body {
+            /* background: url(../img/bg1.png); */
+            background-color: #ccc;
+        }
+        .bear {
+            position: absolute;
+            bottom: 0;
+            height: 100px;
+            width: 200px;
+            background: url(../img/bear.png) no-repeat;
+            animation: bear 0.5s steps(7) infinite, move 1s forwards;
+        }
+        @keyframes bear {
+            0% {
+                background-position: 0 0;
+            }
+            100% {
+                background-position: -1400px 0;
+            }
+        }
+        @keyframes move {
+            0% {
+                left: 0;
+            }
+            100% {
+                left: 50%;
+                margin-left: -100px;
+            }
+        }
+        .bg-1 {
+            position: absolute;
+            bottom: 0;
+            height: 336px;
+            width: 100%;
+            background: url(../img/bg1.png) no-repeat;
+            animation: bg-1-move 30s forwards;
+        }
+        @keyframes bg-1-move {
+            0% {
+                background-position: 0 0;
+            }
+            100% {
+                background-position: -1400px 0;
+            }
+        }
+        .bg-2 {
+            position: relative;
+            height: 569px;
+            width: 100%;
+            background: url(../img/bg2.png) no-repeat;
+            animation: bg-2-move 60s forwards;
+        }
+        @keyframes bg-2-move {
+            0% {
+                background-position: 0 0;
+            }
+            100% {
+                background-position: -1400px 0;
+            }
+        }
+    </style>
+    <body>
+        <div class="bg-2">
+            <div class="bg-1">
+                <div class="bear"></div>
+            </div>
+        </div>
+    </body>
+</html>
