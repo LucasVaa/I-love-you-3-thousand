@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <style>
+        body {
+            transform: perspective(500px);
+        }
+        .box {
+            position: relative;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            margin: 100px auto;
+            transition: all 0.5s;
+            transform-style: preserve-3d;
+        }
+        .box:hover {
+            transform: rotateY(180deg);
+        }
+        .pos,
+        .neg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            line-height: 200px;
+            text-align: center;
+            font-size: 30px;
+            color: #fff;
+        }
+        .pos {
+            z-index: 1;
+            background-color: blue;
+            /* 隐藏旋转 div 元素的背面 */
+            backface-visibility: hidden;
+        }
+        .neg {
+            transform: rotateY(180deg);
+            background-color: purple;
+        }
+    </style>
+    <body>
+        <div class="box">
+            <div class="pos">看看反面</div>
+            <div class="neg">看看正面</div>
+        </div>
+    </body>
+</html>
